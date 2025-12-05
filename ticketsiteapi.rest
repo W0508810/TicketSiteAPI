@@ -1,0 +1,39 @@
+
+
+### All Upcoming Shows
+GET http://localhost:7205/api/shows/upcoming
+
+### Single Show by ID
+GET http://localhost:7205/api/shows/5
+
+### All Customers with Contact Details
+GET http://localhost:7205/api/customers
+
+### Customer Orders by User ID
+GET http://localhost:7205/api/customers/1/orders
+
+### All Payment/Credit Card Details
+GET http://localhost:7205/api/payments
+
+### Available Tickets
+GET http://localhost:7205/api/tickets/available
+
+### All Venues
+GET http://localhost:7205/api/venues
+
+### All Categories
+GET http://localhost:7205/api/categories
+
+### Create New Order
+# POST http://localhost:7205/api/orders
+# Content-Type: application/json
+
+# {
+#   "userId": 1,
+#   "ticketId": 5,
+#   "useCustomPayment": false,
+#   "customCardNumber": null,
+#   "customCardHolder": null,
+#   "customCardExpiry": null
+# }
+
